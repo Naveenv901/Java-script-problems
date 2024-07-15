@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script> 
+// Problem 1
+    let n=100;
+        for(let i=1;i<=n;i++){
+            if(i%5==0&&i%3==0)
+             console.log("FizzBuzz");
+         else if(i%3==0)
+             console.log("Fizz");
+         else if(i%5==0)
+             console.log("Buzz");
+         else
+          console.log(i);
+        }
+        
+// Problem 2  check whether the string is palindrome or not
+    let a="malayalam";
+    let b="";
+    for(let i=a.length-1;i>=0;i--){
+         b= b + a[i];
+    }
+    if(a==b)
+     console.log(a ," is a Palindrome word");
+    else
+      console.log(a,"is not a palindrome word");
+
+// Problem 3 Largest number in an array
+    let arr=[1,2,3,4,8,45,98]
+    let max=0;
+    for(let i=0;i<arr.length;i++){
+        if(max<arr[i])
+          max=arr[i];
+    }
+    console.log("Largest number is " , max);
+  
+
+// Problem 6  Factorial of a number
+       let fact=1;
+       function factorial(number){
+       for(let i=1;i<=number;i++){
+         fact=fact*i;
+       }
+       return fact;
+    };
+    factorial(5);
+    console.log("Factorial of is",fact);
+
+// Problem 7
+     let celsius=40;
+     let fahrenheit=celsius*(9/5)+32;
+     console.log("Temperature in fahrenheit is ",fahrenheit);
+
+// Problem 8
+    let array=[0,1,2,3,4,5,7,8,9];
+    console.log(array);
+    for(let i=0;i<array.length-1;i++ ){
+        if(array[i +1]!=array[i]+1)
+        console.log("Missing number is ",array[i]+1);
+    }
+
+
+
+
+
+        </script>
+</body>
+</html>
